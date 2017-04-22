@@ -1,60 +1,174 @@
-<html><head><title>Camp Availability</title></head><body><h1>Camp Availability (as of 2017-04-22 07:41:59 +0000)</h1><hr /><a href='https://www.reserveamerica.com/camping/samuel-p-taylor-sp/r/campgroundDetails.do?contractCode=CA&parkId=120081'><b>Samuel P. Taylor SP</b></a><br /><br />
-<table><tr><td><b>Monday, 05/01/2017</b></td></tr>
-<tr><td>36 site(s) available out of 60 site(s)<br/>
-ALL (36) GROUP DAY USE (2) GROUP HORSE (1) GROUP STANDARD (2) GROUP TENT ONLY (3) STANDARD (16) TENT ONLY SITE (12)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/08/2017</b></td></tr>
-<tr><td>37 site(s) available out of 60 site(s)<br/>
-ALL (37) GROUP DAY USE (1) GROUP HORSE (1) GROUP STANDARD (2) GROUP TENT ONLY (4) STANDARD (18) TENT ONLY SITE (11)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/15/2017</b></td></tr>
-<tr><td>30 site(s) available out of 60 site(s)<br/>
-ALL (30) GROUP DAY USE (2) GROUP HORSE (1) GROUP STANDARD (2) GROUP TENT ONLY (3) STANDARD (10) TENT ONLY SITE (12)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/22/2017</b></td></tr>
-<tr><td>26 site(s) available out of 60 site(s)<br/>
-ALL (26) GROUP DAY USE (2) GROUP HORSE (1) GROUP STANDARD (2) GROUP TENT ONLY (3) STANDARD (9) TENT ONLY SITE (9)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/29/2017</b></td></tr>
-<tr><td>31 site(s) available out of 60 site(s)<br/>
-ALL (31) GROUP DAY USE (2) GROUP HORSE (1) GROUP STANDARD (2) GROUP TENT ONLY (1) STANDARD (16) TENT ONLY SITE (9)<br/>
-<br/>
-</td></tr>
-</table>
-<hr /><a href='https://www.reserveamerica.com/camping/big-basin-redwoods-sp/r/campgroundDetails.do?contractCode=CA&parkId=120009'><b>Big Basin Redwoods SP</b></a><br /><br />
-<table><tr><td><b>Monday, 05/01/2017</b></td></tr>
-<tr><td>2 site(s) available out of 142 site(s)<br/>
-ALL (2) GROUP STANDARD (2) GROUP TENT ONLY (0) STANDARD (0) TENT ONLY - WALK-IN (0) TENT ONLY SITE (0)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/08/2017</b></td></tr>
-<tr><td>4 site(s) available out of 142 site(s)<br/>
-ALL (4) GROUP STANDARD (2) GROUP TENT ONLY (0) STANDARD (2) TENT ONLY - WALK-IN (0) TENT ONLY SITE (0)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/15/2017</b></td></tr>
-<tr><td>5 site(s) available out of 142 site(s)<br/>
-ALL (5) GROUP STANDARD (2) GROUP TENT ONLY (0) STANDARD (3) TENT ONLY - WALK-IN (0) TENT ONLY SITE (0)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/22/2017</b></td></tr>
-<tr><td>4 site(s) available out of 142 site(s)<br/>
-ALL (4) GROUP STANDARD (2) GROUP TENT ONLY (0) STANDARD (2) TENT ONLY - WALK-IN (0) TENT ONLY SITE (0)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/29/2017</b></td></tr>
-<tr><td>107 site(s) available out of 142 site(s)<br/>
-ALL (107) GROUP STANDARD (2) GROUP TENT ONLY (1) STANDARD (21) TENT ONLY - WALK-IN (31) TENT ONLY SITE (52)<br/>
-<br/>
-</td></tr>
-<tr><td><b>Monday, 05/29/2017</b></td></tr>
-<tr><td>90 site(s) available out of 142 site(s)<br/>
-ALL (90) GROUP STANDARD (0) GROUP TENT ONLY (0) STANDARD (22) TENT ONLY - WALK-IN (25) TENT ONLY SITE (43)<br/>
-<br/>
-</td></tr>
-</table>
-</body></html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Camp Finder</title>
+        <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;" />
+        <style type="text/css">
+            body {
+                background-color: #FF8119;
+                font-family: helvetica, arial, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color:#fafafa;
+                text-rendering: optimizeLegibility;
+            }
+        
+        a {
+            color:#fafafa;
+        }
+        
+        div.table-title {
+            display: block;
+            margin: auto;
+            max-width: 800px;
+            padding:5px;
+            width: 100%;
+        }
+        
+        .table-title h3 {
+            color: #fafafa;
+            font-size: 30px;
+            font-weight: 400;
+            font-style:normal;
+            font-family: helvetica, arial, sans-serif;
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+            text-transform:uppercase;
+        }
+        
+        
+        /*** Table Styles **/
+        
+        .table-fill {
+            background: white;
+            border-radius:3px;
+            border-collapse: collapse;
+            height: 320px;
+            margin: auto;
+            max-width: 800px;
+            padding:5px;
+            width: 100%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            animation: float 5s infinite;
+        }
+        
+        th {
+            color:#D5DDE5;;
+            background:#1b1e24;
+            border-bottom:4px solid #9ea7af;
+            border-right: 1px solid #343a45;
+            font-size:23px;
+            font-weight: 100;
+            padding:24px;
+            text-align:left;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            vertical-align:middle;
+        }
+        
+        th:first-child {
+            border-top-left-radius:3px;
+        }
+        
+        th:last-child {
+            border-top-right-radius:3px;
+            border-right:none;
+        }
+        
+        tr {
+            border-top: 1px solid #C1C3D1;
+            border-bottom-: 1px solid #C1C3D1;
+            color:#666B85;
+            font-size:16px;
+            font-weight:normal;
+            text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+        }
+        
+        tr:hover td {
+            background:#4E5066;
+            color:#FFFFFF;
+            border-top: 1px solid #22262e;
+            border-bottom: 1px solid #22262e;
+        }
+        
+        tr:first-child {
+            border-top:none;
+        }
+        
+        tr:last-child {
+            border-bottom:none;
+        }
+        
+        tr:nth-child(odd) td {
+            background:#EBEBEB;
+        }
+        
+        tr:nth-child(odd):hover td {
+            background:#4E5066;
+        }
+        
+        tr:last-child td:first-child {
+            border-bottom-left-radius:3px;
+        }
+        
+        tr:last-child td:last-child {
+            border-bottom-right-radius:3px;
+        }
+        
+        td {
+            background:#FFFFFF;
+            padding:20px;
+            text-align:left;
+            vertical-align:middle;
+            font-weight:300;
+            font-size:18px;
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #C1C3D1;
+        }
+        
+        td:last-child {
+            border-right: 0px;
+        }
+        
+        th.text-left {
+            text-align: left;
+        }
+        
+        th.text-center {
+            text-align: center;
+        }
+        
+        th.text-right {
+            text-align: right;
+        }
+        
+        td.text-left {
+            text-align: left;
+        }
+        
+        td.text-center {
+            text-align: center;
+        }
+        
+        td.text-right {
+            text-align: right;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class="table-title">
+            <h3>Camp Finder</h3>
+            <h4>
+                As of Saturday, 04/22/2017, Number of Nights = 2
+            </h4>
+        </div>
+        <table class='table-fill'><thead><tr><th class='text-left' colspan='2'><a href='https://www.reserveamerica.com/camping/samuel-p-taylor-sp/r/campgroundDetails.do?contractCode=CA&parkId=120081' target='_blank'>Samuel P. Taylor SP</a></th></tr></thead><tbody class='table-hover'>
+<tr><td class='text-left'>Friday, 05/05/2017</td><td class='text-left'>60 site(s) found<br />ALL (60) GROUP DAY USE (2) GROUP HORSE (1) GROUP STANDARD (2) GROUP TENT ONLY (4) STANDARD (29) TENT ONLY SITE (22)<br /><br /></td></tr>
+<tr><td class='text-left'>Friday, 05/26/2017</td><td class='text-left'>1 site(s) available out of 60 site(s)<br />ALL (1) GROUP DAY USE (0) GROUP HORSE (1) GROUP STANDARD (0) GROUP TENT ONLY (0) STANDARD (0) TENT ONLY SITE (0)<br /><br /></td></tr>
+<tr><td class='text-left'>Friday, 06/16/2017</td><td class='text-left'>2 site(s) available out of 60 site(s)<br />ALL (2) GROUP DAY USE (1) GROUP HORSE (1) GROUP STANDARD (0) GROUP TENT ONLY (0) STANDARD (0) TENT ONLY SITE (0)<br /><br /></td></tr>
+</tbody></table>
+<table class='table-fill'><thead><tr><th class='text-left' colspan='2'><a href='https://www.reserveamerica.com/camping/big-basin-redwoods-sp/r/campgroundDetails.do?contractCode=CA&parkId=120009' target='_blank'>Big Basin Redwoods SP</a></th></tr></thead><tbody class='table-hover'>
+<tr><td class='text-left'>Friday, 05/05/2017</td><td class='text-left'>1 site(s) available out of 142 site(s)<br />ALL (1) GROUP STANDARD (0) GROUP TENT ONLY (0) STANDARD (0) TENT ONLY - WALK-IN (0) TENT ONLY SITE (1)<br /><br /></td></tr>
+</tbody></table>
+
+    </body>
+</html>
